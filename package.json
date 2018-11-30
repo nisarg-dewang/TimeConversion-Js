@@ -4,6 +4,7 @@
   "description": "A NPM package that exports functions to convert miliseconds to timestring ( hh:mm:ss ) and convert timestring to milliseconds.",
   "main": "build/index.js",
   "scripts": {
+    "build":"babel ./src -d ./lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,7 +15,7 @@
     "npm",
     "node",
     "timestring",
-    "date",
+    "dateconvert",
     "javascript"
   ],
   "author": "Nisarg Dewang",
@@ -22,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/Nisarg43/TImeConversion-Js/issues"
   },
-  "homepage": "https://github.com/Nisarg43/TImeConversion-Js#readme"
+  "homepage": "https://github.com/Nisarg43/TImeConversion-Js#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
 }
