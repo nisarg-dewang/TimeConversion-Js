@@ -1,12 +1,12 @@
 {
   "name": "TImeConversion-Js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A NPM package that exports functions to convert miliseconds to timestring ( hh:mm:ss ) and convert timestring to milliseconds.",
   "main": "build/index.js",
   "scripts": {
     "build": "babel ./src -d ./lib",
     "lint": "eslint ./src",
-    "test": "mocha --require babel-core/register"
+    "test": "nyc mocha --require babel-core/register"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,16 @@
     "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  },
+  "dependencies": {
+    "http-server": "^0.11.1"
   }
 }

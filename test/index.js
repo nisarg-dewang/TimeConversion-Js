@@ -11,6 +11,7 @@ const testSamples1 = [
   { input: '127438@#', expectedResult: numErr, description: 'should return error message when receiving "127438@#"' },
   { input: '1234567', expectedResult: '00:20:35', description: 'should return 00:20:35' },
   { input: '23456733', expectedResult: '06:30:57', description: 'should return 06:30:57' },
+  { input: '21684000', expectedResult: '06:01:24', description: 'should return 06:30:57' },
 ];
 
 const testSamples2 = [
@@ -19,6 +20,8 @@ const testSamples2 = [
   { input: '127438@#', expectedResult: stringErr, description: 'should return error message when receiving "127438@#"' },
   { input: '12:01:30', expectedResult: '43290000', description: 'should return 00:20:35' },
   { input: '06:30:24', expectedResult: '23424000', description: 'should return 06:30:57' },
+  { input: '30:24', expectedResult: '1824000', description: 'should return 06:30:57' },
+  { input: '24', expectedResult: '24000', description: 'should return 06:30:57' },
 ];
 
 describe('Array', () => {

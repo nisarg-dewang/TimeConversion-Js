@@ -17,14 +17,15 @@ module.exports = {
             return (hours + ":" + minutes + ":" + seconds);
         }
     }, ConvertTimeStringtoMs: (timestring) => {
-        if (timestring.indexOf(':') > -1) {
+        let ts = /^[0-9/:]*$/
+        if (ts.test(timestring) === true) {
             let a = timestring.split(':')
             let mSeconds
             if (a.length === 1) {
-                mSeconds = (+a[2]);
+                mSeconds = (+a[0]);
             }
-            else if (a.length === 1) {
-                mSeconds = (+a[1]) * 60 + (+a[2]);
+            else if (a.length === 2) {
+                mSeconds = (+a[0]) * 60 + (+a[1]);
             } else {
                 mSeconds = (+a[0]) * 60 * 60 + (+a[1]) * 60 + (+a[2]);
             }
@@ -32,5 +33,24 @@ module.exports = {
         } else {
             return errMsg
         }
+    }
+}
+
+function ConvertTimeStringtoMs(timestring) {
+    let ts = /^[0-9/:]*$/
+    if (ts.test(timestring) === true) {
+        let a = timestring.split(':')
+        let mSeconds
+        if (a.length === 1) {
+            mSeconds = (+a[0]);
+        }
+        else if (a.length === 2) {
+            mSeconds = (+a[0]) * 60 + (+a[1]);
+        } else {
+            mSeconds = (+a[0]) * 60 * 60 + (+a[1]) * 60 + (+a[2]);
+        }
+        return mSeconds * 1000
+    } else {
+        return errMsg
     }
 }
