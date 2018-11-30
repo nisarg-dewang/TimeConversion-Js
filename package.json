@@ -1,0 +1,26 @@
+{
+  "name": "TImeConversion-Js",
+  "version": "0.0.1",
+  "description": "A NPM package that exports functions to convert miliseconds to timestring ( hh:mm:ss ) and convert timestring to milliseconds.",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nisarg43/TImeConversion-Js.git"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "timestring",
+    "date",
+    "javascript"
+  ],
+  "author": "Nisarg Dewang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nisarg43/TImeConversion-Js/issues"
+  },
+  "homepage": "https://github.com/Nisarg43/TImeConversion-Js#readme"
+}
