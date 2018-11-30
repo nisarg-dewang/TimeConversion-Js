@@ -1,3 +1,9 @@
+
+# leave everything else untouched
+.idea/
+.vscode/
+lib/
+
 # Logs
 logs
 *.log
