@@ -3,7 +3,7 @@ const numericErr = 'Please enter numeric Value.';
 
 function ConvertMstoTimeString(ms) {
   const ts = /^[0-9/]*$/;
-  if (ms.test(ts) === false) {
+  if (ts.test(ms) === false) {
     return numericErr;
   }
   let seconds = ms / 1000;
