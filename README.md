@@ -1,10 +1,7 @@
-
-
 # TimeConversion-Js
 
 
-A NPM package that exports functions to convert miliseconds to timestring ( hh:mm:ss ) & convert timestring to 
-milliseconds.
+A NPM package that exports functions to convert miliseconds to timestring ( hh:mm:ss ) & convert timestring to milliseconds.
 
 
 ### Installation
@@ -43,6 +40,9 @@ Tests are using mocha, to run the tests use:
 ```sh
 $ npm test
 ```
+#### Found a Issue :
+
+Please tell us [here](https://github.com/Nisarg43/TimeConversion-Js/issues) 
 
 #### [Want to contribute? Great!](https://github.com/Nisarg43/TimeConversion-Js)
 
