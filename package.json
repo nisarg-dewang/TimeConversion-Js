@@ -1,5 +1,5 @@
 {
-  "name": "@nisarg99/timeconversion-js",
+  "name": "@nisarg99/timeconvertion-js",
   "version": "0.1.0",
   "description": "A NPM package that exports functions to convert miliseconds to timestring ( hh:mm:ss ) and convert timestring to milliseconds.",
   "main": "build/index.js",
