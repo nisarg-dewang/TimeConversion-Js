@@ -37,7 +37,7 @@ console.log(timeString)
 Convert timestring to Microseconds
 ```javascript
 var timeConversion = require('@nisarg99/timeconvertion-js')
-// options for timestring is ex. "09:45:56" , "36:07", "43"
+// options for timestring are ex. "09:45:56" , "36:07", "43"
 var timeString = "09:45:56"  // timestring which converts to milliseconds
 var microSeconds = timeConversion.ConvertTimeStringtoMs(timeString)
 console.log(microSeconds)
@@ -46,7 +46,7 @@ console.log(microSeconds)
 Cpnvert timestring to Seconds
 ```javascript
 var timeConversion = require('@nisarg99/timeconvertion-js')
-// options for timestring is ex. "09:45:56" , "36:07", "43"
+// options for timestring are ex. "09:45:56" , "36:07", "43"
 var timeString = "06:24:32" // timestring which converts to seconds
 var seconds = timeConversion.ConvertTimeStringtoSeconds(timeString)
 console.log(seconds)
