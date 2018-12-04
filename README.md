@@ -17,8 +17,8 @@ $ npm install @nisarg99/timeconvertion-js
 
 ### Development
 
-First Example :
-```sh
+Convert Microseconds to timestring
+```javascript
 var timeConversion = require('@nisarg99/timeconvertion-js')
 var ms = '23456733'  // microseconds which you want to convert
 var timeString = timeConversion.ConvertMstoTimeString(ms)
@@ -26,12 +26,30 @@ console.log(timeString)
 
 ```
 
-Second Example :
-```sh
+Convert Seconds to timestring
+```javascript
 var timeConversion = require('@nisarg99/timeconvertion-js')
-var time = "09:45:56"
-var microSeconds = timeConversion.ConvertTimeStringtoMs(time)
+var seconds = "23457"   // seconds which you want to convert
+var timeString = timeConversion.ConvertSecondstoTimeString(seconds)
+console.log(timeString)
+```
+
+Convert timestring to Microseconds
+```javascript
+var timeConversion = require('@nisarg99/timeconvertion-js')
+// options for timestring is ex. "09:45:56" , "36:07", "43"
+var timeString = "09:45:56"  // timestring which converts to milliseconds
+var microSeconds = timeConversion.ConvertTimeStringtoMs(timeString)
 console.log(microSeconds)
+```
+
+Cpnvert timestring to Seconds
+```javascript
+var timeConversion = require('@nisarg99/timeconvertion-js')
+// options for timestring is ex. "09:45:56" , "36:07", "43"
+var timeString = "06:24:32" // timestring which converts to seconds
+var seconds = timeConversion.ConvertTimeStringtoSeconds(timeString)
+console.log(seconds)
 ```
 
 #### Tests :
