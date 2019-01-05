@@ -1,5 +1,6 @@
 # TimeConversion-Js
 
+[![Build Status](https://travis-ci.org/Nisarg43/TimeConversion-Js.svg?branch=master)](https://api.travis-ci.org/Nisarg43/TimeConversion-Js.svg?branch=master)
 
 A NPM package that exports functions to convert miliseconds to timestring ( hh:mm:ss ) & convert timestring to milliseconds.
 
