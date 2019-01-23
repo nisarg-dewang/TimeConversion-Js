@@ -2,7 +2,6 @@
 
 [![Build Status](https://travis-ci.org/Nisarg43/TimeConversion-Js.svg?branch=master)](https://api.travis-ci.org/Nisarg43/TimeConversion-Js.svg?branch=master)
 [![JavaScript Style Guide: Good Parts](https://img.shields.io/badge/code%20style-goodparts-brightgreen.svg?style=flat)](https://github.com/dwyl/goodparts "JavaScript The Good Parts")
-[![Node version](https://img.shields.io/node/v/@nisarg99/timeconvertion-js.svg?style=flat)](http://nodejs.org/download/)
 [![Known Vulnerabilities](https://snyk.io/test/github/dwyl/hapi-auth-jwt2/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dwyl/hapi-auth-jwt2?targetFile=package.json)
 [![HitCount](http://hits.dwyl.io/nisarg43/TimeConversion-Js.svg)](http://hits.dwyl.io/nisarg43/TimeConversion-Js)
 ## Why? [![start with why](https://img.shields.io/badge/start%20with-why%3F-brightgreen.svg?style=flat)](http://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action)
